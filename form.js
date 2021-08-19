@@ -45,7 +45,7 @@ app.post('/sign_up', async(req, res)=>{
    
   try{
       const result = await user.save();
-      res.send('Thanks for your response')
+     return res.send('Thanks for your response')
       console.log(result)
   }
 catch (ex) {
