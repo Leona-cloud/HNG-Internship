@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
-const Joi = require('joi');
+
 
 
 dotenv.config();
@@ -49,7 +49,7 @@ app.post('/sign_up', async(req, res)=>{
       console.log(result)
   }
 catch (ex) {
-    res.send('Please fill required fields');
+   
     console.log(ex.message);
 };
   
