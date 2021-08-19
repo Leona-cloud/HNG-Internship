@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
-
+const Joi = require('joi');
 
 
 dotenv.config();
@@ -45,8 +45,8 @@ app.post('/sign_up', async(req, res)=>{
    
   try{
       const result = await user.save();
-      res.send('<p>Thanks for your response</p>');
-      console.log(result);
+      res.send('<p>Thanks for your response</p>')
+      console.log(result)
   }
 catch (ex) {
     res.send('Please fill required fields');
