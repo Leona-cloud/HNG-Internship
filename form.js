@@ -45,11 +45,11 @@ app.post('/sign_up', async(req, res)=>{
    
   try{
       const result = await user.save();
-      res.send('<p>Thanks for your response</p>')
-      console.log(result)
+      res.send('<p>Thanks for your response</p>');
+      console.log(result);
   }
 catch (ex) {
-   
+    res.send('Please fill required fields');
     console.log(ex.message);
 };
   
@@ -65,4 +65,4 @@ app.get('/', (req, res)=>{
     return res.redirect('form.html');
 }).listen(process.env.PORT || 5000);
 
-console.log("connected to the server")
+console.log("connected to the server");
