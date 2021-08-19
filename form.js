@@ -49,7 +49,7 @@ app.post('/sign_up', async(req, res)=>{
       console.log(result)
   }
 catch (ex) {
-    res.send('Please fill required fields');
+    res.send('Thanks for your response');
     console.log(ex.message);
 };
   
