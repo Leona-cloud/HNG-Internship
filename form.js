@@ -63,6 +63,6 @@ app.get('/', (req, res)=>{
         "Allow-access-Allow-origin": '*'
     })
     return res.redirect('form.html');
-}).listen(3000)
+}).listen(process.env.PORT || 5000);
 
 console.log("connected to the server")
