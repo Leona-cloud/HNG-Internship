@@ -50,7 +50,7 @@
 }
 
 .box{
-    width: 50%;
+    width: 100%;
     padding: .6em 1em;
     margin: .5em 0;
     border: 1px solid var(--border);
@@ -61,7 +61,7 @@
     background-color: aliceblue;
 }
 .two{
-    width: 50%;
+    width: 100%;
     padding: .6em 1em;
     margin: .5em 0;
     border: 1px solid var(--border);
